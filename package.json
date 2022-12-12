@@ -1,0 +1,36 @@
+{
+  "name": "voting-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "dev": "set NODE_ENV=GANACHE&& nodemon ./server/index.js",
+    "ganacheDeploy": "set NODE_ENV=GANACHE&& node ./ethereum/deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@metamask/eth-sig-util": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "circular-json": "^0.5.9",
+    "cloudinary": "^1.32.0",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.3",
+    "dotenv": "^7.0.0",
+    "ethereumjs-util": "^7.1.5",
+    "express": "^4.16.4",
+    "formidable": "^2.0.1",
+    "fs-extra": "^7.0.1",
+    "image-downloader": "^4.3.0",
+    "jsonfile": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.35",
+    "mongoose": "^6.6.5",
+    "nodemon": "^1.19.4",
+    "solc": "^0.8.0",
+    "truffle-hdwallet-provider": "^1.0.2",
+    "web3": "^1.8.0"
+  }
+}
